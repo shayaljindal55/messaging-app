@@ -4,6 +4,7 @@ import Sidebar from "../../components/Sidebar";
 import {auth, db} from "../../firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import getRecipientEmail from "../../utils/getRecipientEmail";
+import ChatScreen from "../../components/ChatScreen";
 
 function Chat({chat, messages}) {
 const [user] = useAuthState(auth);
