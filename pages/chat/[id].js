@@ -12,11 +12,11 @@ const [user] = useAuthState(auth);
   return (
     <Container>
       <Head>
-        <title>{getRecipientEmail(chat.users, user)}</title>
+        <title>Chat with {getRecipientEmail(chat.users, user)}</title>
       </Head>
       <Sidebar />
       <ChatContainer>
-        <ChatScreen />
+        <ChatScreen chat={chat} messages={messages} />
       </ChatContainer>
     </Container>
   );
